@@ -109,7 +109,7 @@ body {
 }
 .right-content.image5 {
     position: absolute; /* Абсолютное позиционирование */
-    top: 30%; /* Сдвиг вниз от начала родителя */
+    top: 20%; /* Сдвиг вниз от начала родителя */
     right: 0; /* Сдвиг вправо от начала родителя */
     max-width: 1400px; /* Максимальная ширина изображения */
     height: 800px; /* Автоматическая высота */
@@ -130,6 +130,22 @@ body {
     font-size: 25px;
     font-weight: bold; /* Сделать текст жирным */
     margin-bottom: 10px; /* Отступ между текстом и кнопкой */
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 700px; /* Максимальная ширина контейнера */
+    max-height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 700px;
+    height: 900px;
+    display: block;
+    object-fit: contain; /* Сохраняет пропорции изображения */
+    display: block;
 }
 
 button {
@@ -155,45 +171,3 @@ a[data-tl-booking-open="true"]:hover {
     color: #FFFFFF; /* Цвет ссылки при наведении */
     text-decoration: underline; /* Добавляет подчеркивание при наведении, если нужно */
 }   
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 700px; /* Set a max width for the carousel */
-    max-height: 900px;
-    margin: 0 auto;
-}
-
-.carousel img {
-    width: 100%;
-    display: none; /* Hide all images by default */
-}
-
-.carousel img.active {
-    display: block; /* Show the active image */
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: transparent; /* Make background transparent */
-    border: none;
-    font-size: 20px; /* Smaller font size for the arrows */
-    color: rgba(0, 0, 0, 0.5); /* Subtle color */
-    padding: 5px; /* Small padding */
-    opacity: 0.7; /* Slightly transparent */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
-}
-
-.arrow:hover {
-    opacity: 1; /* Full opacity on hover */
-}
-
-.arrow.left {
-    left: 10px;
-}
-
-.arrow.right {
-    right: 10px;
-}

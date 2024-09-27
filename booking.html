@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Номера</title>
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script type='text/javascript'>
         (function(w) {
@@ -68,13 +69,16 @@
         </div>
         
         <div class="right-content image">
-            <div class="carousel">
-                <img src="images/standard/room1.JPG" alt="Стандартный номер 1" class="active">
-                <img src="images/standard/room3.JPG"" alt="Стандартный номер 3">
-                <img src="images/standard/room4.JPG"" alt="Стандартный номер 3">
-                <img src="images/standard/room5.JPG"" alt="Стандартный номер 3">
-                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
-                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/standard/room1.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/standard/room3.JPG" alt="Стандартный номер 3"></div>
+                    <div class="swiper-slide"><img src="images/standard/room4.JPG" alt="Стандартный номер 4"></div>
+                    <div class="swiper-slide"><img src="images/standard/room5.JPG" alt="Стандартный номер 5"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -111,12 +115,14 @@
             </div>
         </div>
         <div class="right-content image2">
-            <div class="carousel">
-                <img src="images/comfort/room1.JPG" alt="Комфортный номер 1" class="active">
-                <img src="images/comfort/room2.JPG" alt="Комфортный номер 2">
-                <img src="images/comfort/room3.JPG" alt="Комфортный номер 3">
-                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
-                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/comfort/room1.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/comfort/room2.JPG" alt="Стандартный номер 3"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>>
     </div>
@@ -153,14 +159,14 @@
             </div>
         </div>
         <div class="right-content image2">
-            <div class="carousel">
-                <img src="images/luxury/room1.jpg" alt="Комфортный номер 1" class="active">
-                <img src="images/luxury/room2.jpg" alt="Комфортный номер 2">
-                <img src="images/luxury/room3.jpg" alt="Комфортный номер 3">
-                <img src="images/luxury/room4.jpeg" alt="Комфортный номер 4">
-                <img src="images/luxury/room5.jpeg" alt="Комфортный номер 5">
-                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
-                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/luxury/room2.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/luxury/room4.jpeg" alt="Стандартный номер 3"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -195,14 +201,15 @@
             </div>
         </div>
         <div class="right-content image4">
-            <div class="carousel">
-                <img src="images/family/room1.jpg" alt="Семейный номер 1" class="active">
-                <img src="images/family/room2.jpg" alt="Семейный номер 2">
-                <img src="images/family/room3.jpg" alt="Семейный номер 3">
-                <img src="images/family/room4.jpg" alt="Семейный номер 3">
-                <img src="images/family/room5.jpg" alt="Семейный номер 3">
-                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
-                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/family/room1.jpg" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/family/room2.jpg" alt="Стандартный номер 3"></div>
+                    <div class="swiper-slide"><img src="images/family/room3.jpg" alt="Стандартный номер 4"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -237,40 +244,34 @@
             </div>
         </div>
         <div class="right-content image5">
-            <div class="carousel">
-                <img src="images/two-room/room1.jpg" alt="Двухкомнатный номер 1" class="active">
-                <img src="images/two-room/room2.jpg" alt="Двухкомнатный номер 2">
-                <img src="images/two-room/room3.jpg" alt="Двухкомнатный номер 3">
-                <img src="images/two-room/room4.jpg" alt="Двухкомнатный номер 3">
-                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
-                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
-            </div>
+            <div class="right-content image">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/two-room/room1.jpg" alt="Стандартный номер 1"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room2.jpg" alt="Стандартный номер 3"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room3.jpg" alt="Стандартный номер 4"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room4.jpg" alt="Стандартный номер 5"></div>
+                    </div>
+                    <!-- Кнопки для навигации -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        let carouselIntervals = [];
-    
-        function changeImage(direction, carousel) {
-            const images = carousel.querySelectorAll('img');
-            let currentImageIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-            images[currentImageIndex].classList.remove('active');
-            currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-            images[currentImageIndex].classList.add('active');
-        }
-    
-        function startCarousel(carousel) {
-            const autoChange = () => changeImage(1, carousel);
-            const intervalId = setInterval(autoChange, 10000); // меняем каждую 3 секунды
-            carouselIntervals.push(intervalId);
-        }
-    
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            startCarousel(carousel);
-            const leftButton = carousel.querySelector('.left');
-            const rightButton = carousel.querySelector('.right');
-    
-            leftButton.addEventListener('click', () => changeImage(-1, carousel));
-            rightButton.addEventListener('click', () => changeImage(1, carousel));
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Бесконечная прокрутка
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'fade', // Плавное появление через эффект fade
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 600, // Скорость переключения
         });
     </script>
 </body>
