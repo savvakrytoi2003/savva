@@ -1,0 +1,92 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.intro {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 100px;
+    line-height: 1.5;
+}
+
+.restaurant, .bar {
+    max-width: 100%; /* Используем полный размер контейнера */
+    margin: 50px 0;
+}
+
+.restaurant .content, .bar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.restaurant .content {
+    flex-direction: row-reverse; /* Фото слева, текст справа */
+}
+
+.restaurant .text, .bar .text {
+    width: 50%; /* Задаем ширину 50% для текста */
+    padding: 100px; /* Возвращаем старый padding */
+    text-align: center;
+}
+
+.restaurant .text h2, .bar .text h2 {
+    font-size: 40px; /* Возвращаем старый размер заголовка */
+    font-weight: 600;
+}
+
+.restaurant .text p, .bar .text p, .restaurant .text p1, .bar .text p1 {
+    font-size: 24px; /* Возвращаем старый размер основного текста */
+    font-weight: 300;
+}
+
+.restaurant .image, .bar .image {
+    width: 50%; /* Задаем ширину 50% для изображения */
+    padding: 10px; /* Возвращаем padding */
+}
+
+.restaurant .image img, .bar .image img {
+    width: 100%; /* Изображение растягивается на 100% ширины контейнера */
+    height: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon p {
+    font-size: 24px;
+}
