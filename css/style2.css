@@ -1,0 +1,174 @@
+.header-container {
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 20px; /* Отступ под заголовком */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-title {
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin: 0; /* Убираем стандартные отступы у заголовка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 1369px;
+    height: 782px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 275px;
+    margin-bottom: 300px; /* Отступ между секциями */
+    position: relative;
+}
+
+.left-content {
+    flex: 1;
+    position: relative; /* Делаем контейнер относительно для позиционирования изображения */
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-over-image h1 {
+    font-size: 36px;
+}
+
+.text-over-image p {
+    font-size: 25px;
+    max-width: 6000px;
+}
+
+.text-over-image, .description, .booking {
+    padding-right: 20px;
+}
+
+.text-over-image h1, .text-over-image p, .description p {
+    text-align: left;
+}
+
+.stats {
+    display: flex;
+    gap: 50px; /* Расстояние между элементами */
+    margin-left: 160px; /* Отступ от левого края */
+}
+
+.stats p {
+    display: flex;
+    flex-direction: column; /* Располагает текст под изображением */
+    align-items: center; /* Центрирует текст под изображением */
+    font-weight: bold;
+}
+
+.stats img {
+    margin-bottom: 5px; /* Отступ между изображением и текстом */
+}
+
+.image {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20%; /* Сдвиг вверх от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px;
+    max-height: 800px;
+    /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+.right-content.image2 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+
+.right-content.image3 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+    max-height: 800px; /* Автоматическая высота */
+}
+.right-content.image4 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+    max-height: 800px; /* Автоматическая высота */
+}
+.right-content.image5 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+.description p {
+    font-size: 20px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.booking span {
+    margin-left: 90px;
+    font-size: 25px;
+    font-weight: bold; /* Сделать текст жирным */
+    margin-bottom: 10px; /* Отступ между текстом и кнопкой */
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 700px; /* Максимальная ширина контейнера */
+    max-height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 700px;
+    height: 900px;
+    display: block;
+    object-fit: contain; /* Сохраняет пропорции изображения */
+    display: block;
+}
+
+button {
+    background-color:#7C3F30;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 32px;
+    font-size: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a2d21;
+}
+
+a[data-tl-booking-open="true"] {
+    color: #FFFFFF; /* Установи желаемый цвет */
+    text-decoration: none; /* Убирает нижнее подчеркивание */
+}
+
+a[data-tl-booking-open="true"]:hover {
+    color: #FFFFFF; /* Цвет ссылки при наведении */
+    text-decoration: underline; /* Добавляет подчеркивание при наведении, если нужно */
+}   
