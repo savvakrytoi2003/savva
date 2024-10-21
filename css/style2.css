@@ -1,0 +1,281 @@
+.header-container {
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 20px; /* Отступ под заголовком */
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.main-nav{
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 44px;
+}
+
+
+
+  .hidden {
+      display: none;
+  }
+  .menu-icon {    
+          display: flex;
+          align-items: center;
+          /* flex: 0 0 auto; Иконка не растягивается, занимает минимально возможное пространство */
+          margin-right: 10px; /* Немного пространства справа от иконки */
+  }
+/* Стили бокового меню остаются прежними */
+
+  
+  .padding-cont1 {
+      padding-left: 65px;
+      padding-right: 65px;
+  }
+  
+  .padding-cont2 {
+      padding-left: 65px;
+      padding-right: 65px;
+  }
+  
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex: 1; /* Логотип занимает оставшееся пространство */
+    }
+
+    .logo img {
+        width: 300px; /* Логотип по центру */
+    }
+  header .logo img {
+    max-width: 100%;
+    margin-right: -50%;                /* Ограничиваем ширину логотипа */
+    height: auto;   
+  }
+  
+  .contact-info {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  .contact-info li:last-child a {
+    margin-right: 20px; /* Отступ справа, измените на нужный */
+}
+  
+  .contact-info a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+      line-height: 44px;
+  
+  }
+  .button_book{
+    color: #000;
+  }
+  
+  .nav {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+  }
+  
+  .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;  
+      margin: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #333;
+  }
+
+.page-title {
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin: 0; /* Убираем стандартные отступы у заголовка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 1369px;
+    height: 782px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 275px;
+    margin-bottom: 300px; /* Отступ между секциями */
+    margin-top: 150px;
+    position: relative;
+}
+
+.left-content {
+    flex: 1;
+    position: relative; /* Делаем контейнер относительно для позиционирования изображения */
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-over-image h1 {
+    font-size: 36px;
+}
+
+.text-over-image p {
+    font-size: 25px;
+    max-width: 6000px;
+}
+
+.text-over-image, .description, .booking {
+    padding-right: 20px;
+}
+
+.text-over-image h1, .text-over-image p, .description p {
+    text-align: left;
+}
+
+.stats {
+    display: flex;
+    gap: 50px; /* Расстояние между элементами */
+    margin-left: 160px; /* Отступ от левого края */
+}
+
+.stats p {
+    display: flex;
+    flex-direction: column; /* Располагает текст под изображением */
+    align-items: center; /* Центрирует текст под изображением */
+    font-weight: bold;
+}
+
+.stats img {
+    margin-bottom: 5px; /* Отступ между изображением и текстом */
+}
+
+.image {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20%; /* Сдвиг вверх от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px;
+    max-height: 800px;
+    /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+.right-content.image2 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+
+.right-content.image3 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+    max-height: 800px; /* Автоматическая высота */
+}
+.right-content.image4 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+    max-height: 800px; /* Автоматическая высота */
+}
+.right-content.image5 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20%; /* Сдвиг вниз от начала родителя */
+    right: 0; /* Сдвиг вправо от начала родителя */
+    max-width: 1400px; /* Максимальная ширина изображения */
+    height: 800px; /* Автоматическая высота */
+}
+.description p {
+    font-size: 20px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.booking span {
+    margin-left: 90px;
+    font-size: 25px;
+    font-weight: bold; /* Сделать текст жирным */
+    margin-bottom: 10px; /* Отступ между текстом и кнопкой */
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 700px; /* Максимальная ширина контейнера */
+    max-height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 700px;
+    height: 900px;
+    display: block;
+    object-fit: contain; /* Сохраняет пропорции изображения */
+    display: block;
+}
+
+button {
+    background-color:#7C3F30;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 32px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a2d21;
+}
+
+.booking a {
+    color: white;
+    text-decoration: none;
+}
