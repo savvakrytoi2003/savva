@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Номера</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type='text/javascript'>
+        (function(w) {
+            var q = [
+                ["setContext", "TL-INT-arhelki-ru_2024-07-23", "ru"],
+                ["embed", "search-form", {
+                        container: "tl-search-form"
+                }]
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq? ti.__cq.concat(q) : q;
+                if (!ti.__loader) {
+                ti.__loader = true;
+                var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
+                function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+                (function l(h) {
+                    if (0===h.length) return; var s=d.createElement("script");
+                    s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
+                    s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <!-- Новый контейнер для заголовка -->
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="main-button">На главную</a></li>
+                <li><a href="restaur.html" class="main-button">отдых</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="Icons/Logo.svg" alt="Логотип">
+        </div>
+        <nav class="contact-info">
+            <ul>
+                <li><a href="tel:+1234567890" class="phone-button">
+                    <i class="fa fa-phone"></i> + 7-818-247-89-99
+                </a></li>
+                <li><a href="#" data-tl-booking-open="true" data-tl-room="">Забронировать номер</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header-container">
+        <h1 class="page-title">Номера</h1>
+    </div>
+
+    <div class="header-container">
+        <h1 class="page-title">Номера</h1>
+    </div>
+
+    <div class="container" id="standart">
+        <!-- Секция для Стандарт -->
+        <div class="left-content">
+            <div class="text-over-image">
+                <h1>Стандарт</h1>
+                <p>Уютный номер для двоих гостей площадью 17м2, с двумя односпальными или одной двуспальной кроватью. Номер оформлен в экологичном стиле с использованием натуральных материалов. Оснащен всеми необходимыми удобствами, включая комфортную кровать, гардероб, ванную комнату с душем.</p>
+            </div>
+            <div class="new-container">
+                <div class="description">
+                    <div class="stats">
+                        <p><img src="Icons/Maximize 2.svg"> 17 кв. м</p>
+                        <p><img src="Icons/User.svg"> 2 человека</p>
+                    </div>
+                    <h2>В номере</h2>
+                    <p>- Комнаты в номере: Спальня 17м2</p>
+                    <p>- Кровати: 1 двуспальная или 2 односпальные</p>
+                    <p>- Размещение: 2+1 (ребенок до трех лет без доп. места)</p>
+                    <p>- Индивидуальный санузел с ванной</p>
+                    <p>- Банные принадлежности: мыло, шампунь, гель для душа</p>
+                    <p>- Wi-Fi</p>
+                    <p>- Цена: 1390р/сутки</p>
+                    <p>- Завтрак входит в тариф</p>
+                    <p>- Заезд в 14.00, выезд в 12.00</p>
+                </div>
+                <div class="booking">
+                    <span>4490₽</span>
+                    <button><a href="#" data-tl-booking-open="true" data-tl-room="">Забронировать</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-content image">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/standard/room1.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/standard/room3.JPG" alt="Стандартный номер 3"></div>
+                    <div class="swiper-slide"><img src="images/standard/room4.JPG" alt="Стандартный номер 4"></div>
+                    <div class="swiper-slide"><img src="images/standard/room5.JPG" alt="Стандартный номер 5"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция для Комфорт -->
+    <div class="container" id="comfort">
+        <div class="left-content">
+            <div class="text-over-image">
+                <h1>Комфорт</h1>
+                <p>Просторный и уютный номер для двоих гостей площадью 20м2, с панорамным окном и видом на живописный лесной пейзаж. Оформлен в экологичном стиле с использованием натуральных материалов, создавая атмосферу гармонии с природой. Номер оснащен всеми необходимыми удобствами, включая комфортную двуспальную кровать, вместительный гардероб и ванную комнату с душем.</p>
+            </div>
+            <div class="new-container">
+                <div class="description">
+                    <div class="stats">
+                        <p><img src="Icons/Maximize 2.svg"> 20 кв. м</p>
+                        <p><img src="Icons/User.svg"> 2 человека</p>
+                    </div>
+                    <h2>В номере</h2>
+                    <p>- Комнаты в номере: Спальня, 20м2</p>
+                    <p>- Кровати: 1 двуспальная</p>
+                    <p>- Размещение: 2+1 (ребенок до трех лет без доп. места)</p>
+                    <p>- Индивидуальный санузел с ванной</p>
+                    <p>- Банные принадлежности: мыло, шампунь, гель для душа</p>
+                    <p>- Фен</p>
+                    <p>- WI-FI</p>
+                    <p>- Доп место 1390р/сутки</p>
+                    <p>- Завтрак входит в тариф</p>
+                    <p>- Заезд в 14.00, выезд в 12.00</p>
+                </div>
+                <div class="booking">
+                    <span>4490₽</span>
+                    <button><a href="#" data-tl-booking-open="true" data-tl-room="" >Забронировать</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content image2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/comfort/room1.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/comfort/room2.JPG" alt="Стандартный номер 3"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>>
+    </div>
+
+    <!-- Секция для Люкс -->
+    <div class="container" id="luxury">
+        <div class="left-content">
+            <div class="text-over-image">
+                <h1>Люкс-студия</h1>
+                <p>Просторный и роскошный номер площадью 30м2, с зонированием пространства и дополнительным раскладным диваном. Оформлен в элегантном стиле с использованием высококачественных натуральных материалов, создавая атмосферу комфорта и уединения. Номер включает в себя комфортную двуспальную кровать, вместительный гардероб, санузел, а также отдельную зону отдыха с раскладным диваном, позволяющим разместить дополнительных гостей.</p>
+            </div>
+            <div class="new-container">
+                <div class="description">
+                    <div class="stats">
+                        <p><img src="Icons/Maximize 2.svg"> 30 кв. м</p>
+                        <p><img src="Icons/User.svg"> 2 человека</p>
+                    </div>
+                    <h2>В номере</h2>
+                    <p>- Комнаты в номере: Спальня 30м2</p>
+                    <p>- Кровати: 1 двуспальная, диван</p>
+                    <p>- Размещение: 2+2 (ребенок до трех лет без доп. места)</p>
+                    <p>- Индивидуальный санузел с ванной - Банные</p>
+                    <p>принадлежности: мыло, шампунь, гель для душа</p>
+                    <p>-Банные принадлежности:шампунь, гель для душа, халаты</p>
+                    <p>- Фен</p>
+                    <p>- WI-FI</p>
+                    <p>- Доп место 1390р/сутки</p>
+                    <p>- Завтрак входит в тариф</p>
+                </div>
+                <div class="booking">
+                    <span>6990₽</span>
+                    <button><a href="#" data-tl-booking-open="true" data-tl-room="" >Забронировать</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content image2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/luxury/room2.JPG" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/luxury/room4.jpeg" alt="Стандартный номер 3"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция для Семейный -->
+    <div class="container" id="family">
+        <div class="left-content">
+            <div class="text-over-image">
+                <h1>Семейный</h1>
+                <p>Просторный и роскошный номер площадью 30м2, с зонированием пространства и дополнительным раскладным диваном. Оформлен в элегантном стиле с использованием высококачественных натуральных материалов, создавая атмосферу комфорта и уединения. Номер включает в себя комфортную двуспальную кровать, вместительный гардероб, санузел, а также отдельную зону отдыха с раскладным диваном, позволяющим разместить дополнительных гостей.</p>
+            </div>
+            <div class="new-container">
+                <div class="description">
+                    <div class="stats">
+                        <p><img src="Icons/Maximize 2.svg"> 40 кв. м</p>
+                        <p><img src="Icons/User.svg"> 4 человека</p>
+                    </div>
+                    <h2>В номере</h2>
+                    <p>- Комнаты в номере: Спальня, 20м2</p>
+                    <p>- Кровати: 1 двуспальная, 1 двухярусная</p>
+                    <p>- Размещение: 2+2 (ребёнок до трех лет без доп места)</p>
+                    <p>- Индивидуальный санузел с ванной</p>    
+                    <p>- Косметические принадлежности: мыло, шампунь, гель для</p>
+                    <p>душа </p>
+                    <p>- Фен - WI-FI - Доп место 1390р/сутки</p>
+                    <p>- Завтрак входит в тариф</p>
+                </div>
+                <div class="booking">
+                    <span>6940₽</span>
+                    <button><a href="#" data-tl-booking-open="true" data-tl-room="" >Забронировать</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content image4">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/family/room1.jpg" alt="Стандартный номер 1"></div>
+                    <div class="swiper-slide"><img src="images/family/room2.jpg" alt="Стандартный номер 3"></div>
+                    <div class="swiper-slide"><img src="images/family/room3.jpg" alt="Стандартный номер 4"></div>
+                </div>
+                <!-- Кнопки для навигации -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция для Двухкомнатный -->
+    <div class="container" id="'two-room">
+        <div class="left-content">
+            <div class="text-over-image">
+                <h1>Двухкомнатный</h1>
+                <p>Просторный и роскошный номер площадью 30м2, с зонированием пространства и дополнительным раскладным диваном. Оформлен в элегантном стиле с использованием высококачественных натуральных материалов, создавая атмосферу комфорта и уединения. Номер включает в себя комфортную двуспальную кровать, вместительный гардероб, санузел, а также отдельную зону отдыха с раскладным диваном, позволяющим разместить дополнительных гостей.</p>
+            </div>
+            <div class="new-container">
+                <div class="description">
+                    <div class="stats">
+                        <p><img src="Icons/Maximize 2.svg"> 30 кв. м</p>
+                        <p><img src="Icons/User.svg"> 4 человека</p>
+                    </div>
+                    <h2>В номере</h2>
+                    <p>- Комнаты в номере: Спальня 30м2</p>
+                    <p>- Кровати: 4 односпальные</p>
+                    <p>- Размещение: до 6 человек (ребёнок до трех лет без доп места) </p>
+                    <p>- Индивидуальный санузел с ванной в каждой комнате</p>
+                    <p>- Фен в каждом санузле</p>
+                    <p>- Банные принадлежности: мыло, шампунь, гель для душа</p>
+                    <p>- WI-FI - Доп место 1390р/сутки </p>
+                    <p>- Завтрак входит в тариф</p>
+                </div>
+                <div class="booking">
+                    <span>8490₽</span>
+                    <button><a href="#" data-tl-booking-open="true" data-tl-room="" >Забронировать</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content image5">
+            <div class="right-content image">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/two-room/room1.jpg" alt="Стандартный номер 1"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room2.jpg" alt="Стандартный номер 3"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room3.jpg" alt="Стандартный номер 4"></div>
+                        <div class="swiper-slide"><img src="images/two-room/room4.jpg" alt="Стандартный номер 5"></div>
+                    </div>
+                    <!-- Кнопки для навигации -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Бесконечная прокрутка
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'fade', // Плавное появление через эффект fade
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 600, // Скорость переключения
+        });
+    </script>
+</body>
+</html>
